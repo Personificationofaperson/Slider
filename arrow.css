@@ -1,0 +1,80 @@
+body {
+    overflow-x: hidden;
+}
+
+.outer-carrousel {
+    overflow-x: hidden;
+}
+
+.carrousel {
+    display: flex;
+    gap: 2rem; 
+    flex-grow: 0; 
+}
+
+.slide {
+    min-width: 33vw;
+    height: 25%;
+    display: flex column;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.329);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.photo-slide {  
+    height: 10vh;
+    aspect-ratio: 1/1; 
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.person p {
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    color: orange;
+}
+
+.person p:first-child {
+    font-family: "raleway";
+    font-size: 30px;
+}
+
+.person p:nth-child(2) {
+    font-family: "raleway";
+    font-size: 20px;
+}
+
+
+.text-image-content {
+    margin: 0;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255, 166, 0, 0.087);
+    border-radius: 0px 0px 10px 10px;
+    padding: 1rem;
+}
+
+.description {
+    font-family: "poppins";
+    padding: 2rem 2rem 1rem 2rem;  
+}
+
+.arrows img {
+    height: 5%;
+    aspect-ratio: 1/1;
+}
+
+.arrows {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.moveslider {
+    transition: 0.3s ease-in-out;
+}
