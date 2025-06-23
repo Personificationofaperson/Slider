@@ -1,5 +1,6 @@
 body {
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .outer-carrousel {
@@ -8,12 +9,12 @@ body {
 
 .carrousel {
     display: flex;
-    gap: 2rem; 
     flex-grow: 0; 
+    gap: 2rem;
 }
 
 .slide {
-    min-width: 33vw;
+    min-width: calc(31vw);
     height: 25%;
     display: flex column;
     align-items: center;
