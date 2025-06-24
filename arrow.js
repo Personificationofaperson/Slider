@@ -1,12 +1,11 @@
 const leftArrow = document.getElementById("arrow-left");
 const rightArrow = document.getElementById("arrow-right");
-const allSlides = document.querySelectorAll(".slide");
 const carrousel = document.querySelector(".carrousel");
 const slideWidth = document.querySelector(".slide").offsetWidth + parseFloat(getComputedStyle(carrousel).gap) + 20; //full width of each slide including gap and margin set in CSS
 
 const widthCarrousel = document.querySelector(".outer-carrousel").scrollWidth; // width of the outer carrousel, including the remaining scrollwidth
 const initialSlidesInView = Math.round(document.querySelector(".outer-carrousel").offsetWidth / slideWidth); // how many slides are in view at the start
-const maxIndex = allSlides.length - initialSlidesInView; // maximum index to scroll to, which is the total number of slides minus the number of slides in view at the start
+const maxIndex = document.querySelectorAll(".slide").length - initialSlidesInView; // maximum index to scroll to, which is the total number of slides minus the number of slides in view at the start
 const widthInitial = document.querySelector(".outer-carrousel").offsetWidth; // width of the outer carrousel available at the start, which is the width of the outer carrousel without the remaining scrollwidth
 const fullScrollAmount = Math.round((widthCarrousel - widthInitial) / initialSlidesInView + 10); //amount to scroll per click, based on the width of the outer carrousel and the number of slides in view with extra padding for the last slide
 
