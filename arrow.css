@@ -14,7 +14,7 @@ body {
 }
 
 .slide {
-    min-width: calc(31vw);
+    min-width: calc(100vw / 3);
     height: 25%;
     display: flex column;
     align-items: center;
