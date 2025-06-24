@@ -69,6 +69,7 @@ body {
 .arrows img {
     height: 5%;
     aspect-ratio: 1/1;
+    cursor: pointer;
 }
 
 .arrows {
